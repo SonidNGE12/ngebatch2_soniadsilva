@@ -2,5 +2,5 @@ Java
 Javascript
 Typescript
 React
-NodeJS
-AWS(Amazon Web Services)
+Node Express
+AWS
