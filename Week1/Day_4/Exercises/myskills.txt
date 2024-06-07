@@ -3,4 +3,4 @@ Javascript
 Typescript
 React
 NodeJS
-AWS
+AWS(Amazon Web Services)
