@@ -11,6 +11,14 @@ const dataHolderDiv = document.getElementById('data-holder')
 const fetchHandler = () => {
   const serverUrl = 'http://localhost:8080/marks-house'
   console.log('Fetching data from...', serverUrl)
+  fetch(serverUrl)
+    .then((res) => res.text())
+    .then(data => {
+      const dbdata = document.createElement('p');
+      dbdata.innerText = `The server responded with: ${dbdata}`;
+      fetchButton!.appendChild(dbdata);
+    })
+    ;
 
   // EXERCISE
   // Put a fetch() promise chain in here
@@ -24,7 +32,27 @@ const postHandler = () => {
   console.log('Posting data to...', serverUrl)
   const petTypeText = (petTypeInput as HTMLInputElement).value
   const petCountText = (petCountInput as HTMLInputElement).value
-  const dataToSend =  { petType: petTypeText, count: petCountText }
+  const dataToSend = { petType: petTypeText, count: petCountText }
+  
+  fetch(serverUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      petType: "budgies",
+      count: 3,
+    }),
+  })
+    .then((response) => {
+      if (response.status >= 400) {
+        throw new Error(`error status: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then((data) => (dataHolderDiv!.innerText = data))
+    .catch((error) => console.log("there was an error:", error));
+  
 
   // EXERCISE
   // Put a fetch() promise chain in here

@@ -26,6 +26,7 @@ const academyUsers: SomeUsers = {
 
 const ageUpdater = (originalUsers: SomeUsers) => {
   // TODO: Your code goes here
+
 }
 
 // Call the Age Updater function
