@@ -12,7 +12,7 @@ export interface CommentsProps
     data: CommentsType;
 }
 
-export default function Comment({ data }: CommentsProps) {
+export default function Comment({data}: CommentsProps) {
   return (
     <div>
       <div className="comment">

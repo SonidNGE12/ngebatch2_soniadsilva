@@ -1,0 +1,21 @@
+2024-07-16 04:37:34.647 [info] Log level: Info
+2024-07-16 04:37:34.647 [info] Validating found git in: "git"
+2024-07-16 04:37:34.647 [info] Using git "2.34.1" from "git"
+2024-07-16 04:37:34.647 [info] > git rev-parse --show-toplevel [8ms]
+2024-07-16 04:37:34.647 [info] > git rev-parse --git-dir --git-common-dir [14ms]
+2024-07-16 04:37:34.647 [info] Open repository: /root/ngebatch2-soniarepo/ngebatch2_soniadsilva
+2024-07-16 04:37:34.698 [info] > git rev-parse --show-toplevel [6ms]
+2024-07-16 04:37:34.699 [info] > git config --get commit.template [31ms]
+2024-07-16 04:37:34.762 [info] > git rev-parse --show-toplevel [40ms]
+2024-07-16 04:37:34.789 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [39ms]
+2024-07-16 04:37:34.792 [info] > git rev-parse --show-toplevel [8ms]
+2024-07-16 04:37:34.846 [info] > git rev-parse --show-toplevel [33ms]
+2024-07-16 04:37:34.887 [info] > git rev-parse --show-toplevel [4ms]
+2024-07-16 04:37:34.937 [info] > git rev-parse --show-toplevel [17ms]
+2024-07-16 04:37:34.994 [info] > git rev-parse --show-toplevel [20ms]
+2024-07-16 04:37:35.261 [info] > git check-ignore -v -z --stdin [45ms]
+2024-07-16 04:37:36.774 [info] > git check-ignore -v -z --stdin [29ms]
+2024-07-16 04:37:37.220 [info] > git status -z -uall [2377ms] (cancelled)
+2024-07-16 04:37:38.316 [info] > git check-ignore -v -z --stdin [23ms]
+2024-07-16 04:37:39.386 [info] > git check-ignore -v -z --stdin [36ms]
+2024-07-16 04:37:41.187 [info] > git check-ignore -v -z --stdin [92ms]
